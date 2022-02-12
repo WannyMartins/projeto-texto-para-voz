@@ -1,0 +1,12 @@
+
+  // K42FBnKdJqPo5udGKfoGBWfyqzmM661ZfX1cQ1CAG-DB
+
+  // TB7Ga14NWihWEc1IyFQD1nxfAqOTR-lTIU6ntM6GYsWa
+  {
+    "apikey": "TB7Ga14NWihWEc1IyFQD1nxfAqOTR-lTIU6ntM6GYsWa",
+    "iam_apikey_description": "Auto-generated for key crn:v1:bluemix:public:speech-to-text:au-syd:a/3f82803c13164f9b8efc7ca47f999df9:84158d92-f14a-4aa7-8ba0-340f7215308f:resource-key:ca14d5bd-a76e-41cc-9164-08d8f5694ee2",
+    "iam_apikey_name": "Auto-generated service credentials",
+    "iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
+    "iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::a/3f82803c13164f9b8efc7ca47f999df9::serviceid:ServiceId-62e67d84-5435-42bb-9333-a457bf3b0541",
+    "url": "https://api.au-syd.speech-to-text.watson.cloud.ibm.com/instances/84158d92-f14a-4aa7-8ba0-340f7215308f"
+  }
