@@ -2,4 +2,12 @@
 const synthesize = require('./src/synthesize')
 
 //transcription();
-synthesize();
+
+const texto = 'Vamos lá, mais um teste, agora com paramentros e nome do arquivo.'
+
+const trataDadosDeEntrada = () => {
+  
+}
+
+synthesize(texto, 'teste2');
+

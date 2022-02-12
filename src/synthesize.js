@@ -7,9 +7,10 @@ const { IamAuthenticator } = require('ibm-watson/auth');
 
 const credentials = require('./apikey-ibm-cloud-tts.json');
 
-const textToConvert = fs.readFileSync(path.join(__dirname, '../transcription.txt'), 'utf8');
+// const textToConvert = fs.readFileSync(path.join(__dirname, '../transcription.txt'), 'utf8');
+const textToConvert = 'Teste, recebendo testo.';
 
-async function synthesize() {
+async function synthesize(textToConvert, fileName) {
     const textToSpeech = new TextToSpeechV1({
         authenticator: new IamAuthenticator({
             apikey: credentials.apikey,
@@ -28,7 +29,7 @@ async function synthesize() {
         return textToSpeech.repairWavHeaderStream(response.result);
     })
     .then(buffer => {
-        fs.writeFileSync('synthesize.wav', buffer);
+        fs.writeFileSync(`${fileName}.wav`, buffer);
     })
     .catch(err => {
         console.log('error: ', err);
