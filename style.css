@@ -80,6 +80,9 @@ main {
   font-size: 20px;
   text-align: start;
 }
+#repete {
+  cursor: pointer;
+}
 
 #sinthes{
   margin-top: 25px;
