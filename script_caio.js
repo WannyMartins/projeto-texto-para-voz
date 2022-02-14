@@ -8,16 +8,16 @@ limpar.addEventListener('click', () => {
   texto.value = '';
 });
 
-function sintetizar() {
-  if (texto.value) {
-    const textoATraduzir = texto.value;
-    console.log(textoATraduzir);
-  }
-}
+// function sintetizar() {
+//   if (texto.value) {
+//     const textoATraduzir = texto.value;
+//     console.log(textoATraduzir);
+//   }
+// }
 
-play.addEventListener('click', () => {
-  sintetizar();
-});
+// play.addEventListener('click', () => {
+//   sintetizar();
+// });
 
 function memoriaClicavel(event) {
   texto.value = event.target.innerText;
@@ -28,12 +28,13 @@ function criarLista() {
   if (!texto.value || texto.value.startsWith(' ')) {
     throw new Error('Não existe texto para salvar');
   }
+
   const li = document.createElement('li');
-    li.innerText = texto.value;
-    li.classList = 'sintetizados';
-    li.addEventListener('click', memoriaClicavel);
-    relacao.appendChild(li);
-    texto.value = '';
+  li.innerText = texto.value;
+  li.classList = 'sintetizados';
+  li.addEventListener('click', memoriaClicavel);
+  relacao.appendChild(li);
+  texto.value = '';
 }
 
 enviar.addEventListener('click', () => {
