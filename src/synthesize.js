@@ -7,8 +7,9 @@ const { IamAuthenticator } = require('ibm-watson/auth');
 
 const credentials = require('./apikey-ibm-cloud-tts.json');
 
-// const textToConvert = fs.readFileSync(path.join(__dirname, '../transcription.txt'), 'utf8');
-const textToConvert = 'Teste, recebendo testo.';
+//const textToConvert = fs.readFileSync(path.join(__dirname, '../transcription.txt'), 'utf8');
+
+
 
 async function synthesize(textToConvert, fileName) {
     const textToSpeech = new TextToSpeechV1({
@@ -36,4 +37,4 @@ async function synthesize(textToConvert, fileName) {
     })
 }
 
-module.exports = synthesize;
+module.exports = synthesize; 

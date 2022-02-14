@@ -3,11 +3,5 @@ const synthesize = require('./src/synthesize')
 
 //transcription();
 
-const texto = 'Vamos lá, mais um teste, agora com paramentros e nome do arquivo.'
-
-const trataDadosDeEntrada = () => {
-  
-}
-
-synthesize(texto, 'teste2');
-
+const test =  'Olá, somos alunos da tribo assim que se coda, e estamos muito felizes em apresentar a vocês em primeira mão a versão 1 do nosso projeto. produzido por: Caio Costa, Imar Mendes, Thiago Zardo, Wanny martins';
+synthesize(test, 'boasVindas'); 
